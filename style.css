@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: linear-gradient(135deg, #000000ec, #5ca2a1);
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 67.5px [col-start]);
+    grid-template-rows: repeat(5, 60px [col-start]);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-top: 15px;
+}
+
+#equal {
+    grid-column: span 2;
+}
+
+.d_box {
+    border: 01px solid black;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    text-align: right;
+}
+
+button:hover {
+    box-shadow: 0px 2px 2px 0px hsl(0, 0%, 0%);
+}
+
+.container {
+    background-color: rgba(245, 245, 245, 0);
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px 0px hsla(218, 5%, 54%, 0);
+}
+
+button {
+    border-radius: 10px;
+    border: 0px solid black;
+    background-color: white;
+}
+
+.display {
+    text-align: right;
+    font-size: 1.8em;
+    padding: 15px 15px;
+    margin: 0px;
+    max-width: 270px;
+}
+
+.num,
+#negate,
+#clear,
+#del,
+#div,
+#multi,
+#minus,
+#plus,
+#float {
+    font-size: 21px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    background-image: linear-gradient(135deg, #0f86bdec, #a15bab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
